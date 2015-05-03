@@ -15,23 +15,36 @@
 
 </head>
 <body>
+	<ul class="navigation">
+    <li class="nav-item"><a href="#">Home</a></li>
+    <li class="nav-item"><a href="#">Login</a></li>
+    <li class="nav-item"><a href="#">Sign Up</a></li>
+    <li class="nav-item"><a href="#">About</a></li>
+    <li class="nav-item"><a href="#">Contact</a></li>
+</ul>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger"></label>
+<div class="site-wrap">
 	<nav>
 	  <div class="row navbar">
-	  <div class="small-3 columns text-left">
-	    <div class="wrapper" id="hamburger">
-	      <div class="menuicon"></div>
-	      <div class="menuicon"></div>
-	      <div class="menuicon"></div>
-	    </div>
-	  </div>
-	  <div class="small-3 columns text-left">
+		<div class="small-3 small-offset-3 columns">
 	    <img src="static/images/tagwirelogo.png" height=100px width=-100px class="logo">
 	  </div>
-	  <div class="small-6 columns text-center">
-	    <div class="wrapper">
-	    <input id="top-search" type="search" placeholder="Search"></input>
-	  </div>
-	  </div>
+		<div class="small-6 columns text-center">
+			<div class="wrapper">
+			<input id="top-search" type="search" placeholder="Search"></input>
+		</div>
+		</div>
+		<!--<div class="small-3 columns text-left">
+			<div class="wrapper" id="hamburger">
+				<a href="#" class="menu-toggle" id="menuButton">
+				<div class="menuicon"></div>
+				<div class="menuicon"></div>
+				<div class="menuicon"></div>
+			</a>
+			</div>
+		</div>-->
 	</div>
 	</nav>
 	
@@ -66,5 +79,6 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="/static/js/main.js"></script>
 	
+</div>
 </body>
 </html>

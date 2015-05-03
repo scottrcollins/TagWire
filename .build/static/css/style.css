@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden; }
+
 .row {
   max-width: 100%; }
 
@@ -31,5 +34,54 @@ nav {
 
 .navbar {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); }
+
+.navigation {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0; }
+
+.site-wrap {
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1; }
+
+.nav-trigger {
+  position: absolute;
+  clip: rect(0, 0, 0, 0); }
+
+label[for="nav-trigger"] {
+  position: fixed;
+  top: 25px;
+  left: 15px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-image: url("../images/twhamburger.png");
+  background-size: contain; }
+
+.nav-trigger:checked + label {
+  left: 215px; }
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5); }
+
+.nav-trigger + label, .site-wrap {
+  transition: left 0.2s; }
+
+a {
+  color: #583F64; }
 
 /*# sourceMappingURL=style.css.map */
