@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="{% static 'css/foundation.min.css' %}">
 	<link rel="shortcut icon" href="{% static '/images/favicon.ico' %}">
+	<link rel="stylesheet" href="{% static '/css/pushy.css' %}">
 	<link rel="stylesheet" href="{% static '/css/style.css' %}">
 	<script src="{% static 'js/vendor/modernizr.js' %}"></script>
 
@@ -15,27 +16,47 @@
 
 </head>
 <body>
-	<ul class="navigation">
-    <li class="nav-item"><a href="#">Home</a></li>
-    <li class="nav-item"><a href="#">Login</a></li>
-    <li class="nav-item"><a href="#">Sign Up</a></li>
-    <li class="nav-item"><a href="#">About</a></li>
-    <li class="nav-item"><a href="#">Contact</a></li>
+	<nav class="pushy pushy-left">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a class="important" href="#">Login</a></li>
+				<li><a href="#">Sign Up</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<div class="site-overlay"></div>
+<div id="container">
+	<!--<ul class="navigation">
+    <li class="nav-item-a"><a href="#">Home</a></li>
+    <li class="nav-item-b"><a href="#">Login</a></li>
+    <li class="nav-item-a"><a href="#">Sign Up</a></li>
+    <li class="nav-item-b"><a href="#">About</a></li>
+    <li class="nav-item-a"><a href="#">Contact</a></li>
 </ul>
 
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
 <label for="nav-trigger"></label>
-<div class="site-wrap">
-	<nav>
+<div class="site-wrap">-->
+
+	<div class="nav-top">
 	  <div class="row navbar">
-		<div class="small-3 small-offset-3 columns">
-	    <img src="static/images/tagwirelogo.png" height=100px width=-100px class="logo">
+		<div class="small-3 columns">
+			<div class="menu-btn hamburger">
+					<div class="menuicon"></div>
+					<div class="menuicon"></div>
+					<div class="menuicon"></div>
+		</div>
+	</div>
+		<div class="small-3 columns">
+	    <img src="static/images/tagwirelogo.png" height=50px width=50px class="logo">
 	  </div>
 		<div class="small-6 columns text-center">
 			<div class="wrapper">
 			<input id="top-search" type="search" placeholder="Search"></input>
 		</div>
 		</div>
+
 		<!--<div class="small-3 columns text-left">
 			<div class="wrapper" id="hamburger">
 				<a href="#" class="menu-toggle" id="menuButton">
@@ -46,18 +67,19 @@
 			</div>
 		</div>-->
 	</div>
-	</nav>
+</div>
 	{% block content %}
 		Main content
 	{% endblock content %}
-
 	{% block scripts %}
+</div>
 	<script src="{% static 'js/vendor/jquery.js' %}"></script>
 	<script src="{% static 'js/foundation.min.js' %}"></script>
 	<script>
 		$(document).foundation();
 	</script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="{% static '/js/pushy.min.js' %}"></script>
 		<script src="{% static '/js/main.js' %}"></script>
 	{% endblock scripts%}
 </div>
