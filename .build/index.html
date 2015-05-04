@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/static/css/foundation.min.css">
 	<link rel="shortcut icon" href="/static/images/favicon.ico">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/static/css/pushy.css">
+	<link rel="stylesheet" href="/static/css/switchery.css">
 	<link rel="stylesheet" href="/static/css/style.css">
 	<script src="/static/js/vendor/modernizr.js"></script>
 
@@ -19,6 +21,7 @@
 	<nav class="pushy pushy-left">
     <ul>
         <li><a href="#">Home</a></li>
+				<li><a href="#">Search x Tag</a></li>
         <li><a class="important" href="#">Login</a></li>
 				<li><a href="#">Sign Up</a></li>
 				<li><a href="#">About</a></li>
@@ -70,19 +73,100 @@
 </div>
 	
 <div class="mainwrap">
+<div class="row sign-up-alert">
+  <div class="small-12 columns text-center">
+    <p><a href="#" class="sign-up-btn">Sign Up</a> for a custom dashboard&nbsp&nbsp<a href="#" id="close-sign-up-alert">&otimes;</a></p>
+  </div>
+</div>
+<section class="popular-section">
 <div class="row">
   <div class="small-12 columns">
     <h3>Popular</h3>
   </div>
 </div>
 <div class="popular">
-  <a href="#"><img src="http://placehold.it/200x200"></a>
-  <a href="#"><img src="http://placehold.it/200x200"></a>
-  <a href="#"><img src="http://placehold.it/200x200"></a>
-  <a href="#"><img src="http://placehold.it/200x200"></a>
-  <a href="#"><img src="http://placehold.it/200x200"></a>
+  <a href="#"><img title="title" src="http://placehold.it/200x200"></a>
+  <a href="#"> <img src="http://placehold.it/200x200"></a>
+  <a href="#"> <img src="http://placehold.it/200x200"></a>
+  <a href="#"> <img src="http://placehold.it/200x200"></a>
+  <a href="#"> <img src="http://placehold.it/200x200"></a>
+  <a href="#"> <img src="http://placehold.it/200x200"></a>
+  <a href="#"> <img src="http://placehold.it/200x200"></a>
+  <a href="#"> <img src="http://placehold.it/200x200"></a>
 
 </div>
+</section>
+<section class="recent-section">
+<div class="row">
+  <div class="small-12 columns">
+    <h3>Recently Submitted</h3>
+  </div>
+</div>
+<div class="recent">
+  <a href="#"><img title="title" src="http://placehold.it/200x200"></a>
+  <a href="#"> <img src="http://placehold.it/200x200"></a>
+  <a href="#"> <img src="http://placehold.it/200x200"></a>
+  <a href="#"> <img src="http://placehold.it/200x200"></a>
+  <a href="#"> <img src="http://placehold.it/200x200"></a>
+  <a href="#"> <img src="http://placehold.it/200x200"></a>
+  <a href="#"> <img src="http://placehold.it/200x200"></a>
+  <a href="#"> <img src="http://placehold.it/200x200"></a>
+
+</div>
+</section>
+<section class="tags">
+  <div class="row">
+    <div class="small-12 columns text-center">
+      <h3>Search By Tags</h3>
+      <p>Tap the slider next to the tags you want included </p>
+      <p>Tapping mutiple tags will give you results that only pertain to ALL the tags selected</p>
+    </div>
+  </div>
+  <div class="row search-by-tag">
+    <div class="small-6 columns text-left">
+      <h4>Asexual</h4>
+    </div>
+    <div class="small-6 columns text-right">
+    <label><input type="checkbox" class="ios-switch bigswitch" /><div><div></div></div></label>
+  </div>
+</div>
+
+<div class="row search-by-tag">
+  <div class="small-6 columns text-left">
+    <h4>Bisexual</h4>
+  </div>
+  <div class="small-6 columns text-right">
+  <label><input type="checkbox" class="ios-switch bigswitch" /><div><div></div></div></label>
+</div>
+</div>
+
+<div class="row search-by-tag">
+  <div class="small-6 columns text-left">
+    <h4>Gay</h4>
+  </div>
+  <div class="small-6 columns text-right">
+  <label><input type="checkbox" class="ios-switch bigswitch" /><div><div></div></div></label>
+</div>
+</div>
+
+<div class="row search-by-tag">
+  <div class="small-6 columns text-left">
+    <h4>Lesbian</h4>
+  </div>
+  <div class="small-6 columns text-right">
+  <label><input type="checkbox" class="ios-switch bigswitch" /><div><div></div></div></label>
+</div>
+</div>
+
+<div class="row search-by-tag">
+  <div class="small-6 columns text-left">
+    <h4>Pansexual</h4>
+  </div>
+  <div class="small-6 columns text-right">
+  <label><input type="checkbox" class="ios-switch bigswitch"  /><div><div></div></div></label>
+</div>
+</div>
+</section>
 </div>
 
 	
@@ -94,6 +178,7 @@
 	</script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="/static/js/pushy.min.js"></script>
+		<script src="/static/js/switchery.js"></script>
 		<script src="/static/js/main.js"></script>
 	
 </div>

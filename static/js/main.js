@@ -1,5 +1,16 @@
 
 
+var closeSignUpButton = $('#close-sign-up-alert');
+var signUpAlert = $('.sign-up-alert');
+
+closeSignUpButton.on('click', function(event){
+	event.preventDefault();
+	close();
+});
+function close(){
+  signUpAlert.addClass('close');
+}
+
 
 // To make images retina, add a class "2x" to the img element
 // and add a <image-name>@2x.png image. Assumes jquery is loaded.
