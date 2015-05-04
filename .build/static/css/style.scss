@@ -1,5 +1,6 @@
 //variables//
-$primary-color: #583F64;
+$primary-color: #583f64;
+$primary-colorrgba: rgba(88, 63, 100, 1.0);
 $important: #1abc9c;
 $default-font: 'Montserrat', sans-serif;
 
@@ -8,6 +9,7 @@ body {
 }
 h1, h2, h3, h4{
   font-family: $default-font;
+  font-weight: 700;
 }
 .row{
   max-width: 100%;
@@ -95,11 +97,21 @@ padding-top: 10px;
  overflow-y: hidden;
  white-space: nowrap;
 }
+.search-by-tag-headline{
+  background-color: $primary-color;
+  color: #fff;
+}
 .search-by-tag{
   border-top: 1px solid $primary-color;
 }
 .tags h4{
   margin: 15px 1.2em 15px 2.5em;
+}
+.go{
+  border: solid 1px $primary-color;
+  border-radius: 2px;
+  width: 50%;
+  background-color: $primary-color;
 }
 input[type="checkbox"] {
 	position: absolute;
@@ -123,7 +135,7 @@ input[type="checkbox"].ios-switch:checked + div {
 	background-position: 0 0;
 	background-color:  $primary-color;
 	border: 1px solid $primary-color;
-	box-shadow: inset 0 0 0 10px rgba(88, 63, 100, 1);
+	box-shadow: inset 0 0 0 10px $primary-colorrgba;
 }
 
 /* Tiny Track */
@@ -166,7 +178,7 @@ input[type="checkbox"].ios-switch:checked + div > div {
 	-webkit-transform: translate3d(20px, 0, 0);
 	-moz-transform: translate3d(20px, 0, 0);
 	background-color: #ffffff;
-	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(8, 80, 172,1);
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px $primary-colorrgba;
 }
 
 /* Tiny Knob */
@@ -185,14 +197,14 @@ input[type="checkbox"].tinyswitch.ios-switch:checked + div > div {
 /* Big Knob */
 input[type="checkbox"].bigswitch.ios-switch + div > div {
 	width: 23px; height: 23px;
-	margin-top: 1px;
+	margin-top: 0px;
 }
 
 /* Checked Big Knob (Blue Style) */
 input[type="checkbox"].bigswitch.ios-switch:checked + div > div {
 	-webkit-transform: translate3d(25px, 0, 0);
 	-moz-transform: translate3d(16px, 0, 0);
-	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(88, 63, 100, 1);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), 0px 0px 0 1px $primary-colorrgba;
 }
 
 /* Green Knob */
